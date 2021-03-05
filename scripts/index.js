@@ -164,9 +164,13 @@ class formControl {
     if(document.querySelector('.tel-error')){
       document.querySelector('.tel-error').remove()
     }
+    event.preventDefault()
     if (!this.validName(this.name.value) || !this.validTel(this.tel.value)){
-      event.preventDefault()
       this.handleFormSendErrors(this.name.value, this.tel.value)
+    }else {
+      alert('Заказ успешно оформлен');
+      this.name.value = '';
+      this.tel.value = '';
     }
   }
   handleFormSendErrors(name, tel){

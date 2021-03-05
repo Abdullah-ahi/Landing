@@ -82,7 +82,8 @@ body {
 .composition-block-name {
   display: block;
   margin: 0 auto;
-  width: 18%;
+  width: 100%;
+  text-align: center;
   font-size: 28px;
   text-transform: uppercase;
   font-family: 'Open Sans';
@@ -201,7 +202,8 @@ body {
 .testimonials-name {
   display: block;
   margin: 0 auto 50px;
-  width: 18%;
+  width: 100%;
+  text-align: center;
   font-size: 28px;
   text-transform: uppercase;
   font-family: 'Open Sans';
@@ -223,7 +225,8 @@ body {
 .description-name {
   display: block;
   margin: 0 auto 50px;
-  width: 18%;
+  width: 100%;
+  text-align: center;
   font-size: 28px;
   text-transform: uppercase;
   font-family: 'Open Sans';
@@ -297,7 +300,8 @@ body {
 .footer-product-name {
   display: block;
   margin: 0 auto 50px;
-  width: 13%;
+  width: 100%;
+  text-align: center;
   font-family: 'Open Sans';
   font-weight: bold;
   color: #fff;
@@ -395,7 +399,7 @@ body {
     width: 42%;
   }
 }
-@media(max-width: 1024px){
+@media(max-width: 1025px){
   .product-description {
     font-size: 15px;
   }
@@ -426,19 +430,19 @@ body {
     margin: 55px auto 70px;
     width: 78%;
   }
-  .footer-product-name {
-    width: 19%;
-  }
   #form {
     width: 48%;
   }
 }
-@media(max-width: 768px){
+@media(max-width: 769px){
   .promo {
     width: 80%;
   }
   .product-img {
     width: 25%;
+  }
+  .background-video {
+    top: -30px;
   }
   .product-description {
     font-size: 11px;
@@ -465,13 +469,10 @@ body {
     flex-direction: row;
   }
   .composition-block-name {
-    width: 29%;
+    margin-bottom: 20px;
   }
   .product-composition-img {
     margin: 0 auto;
-  }
-  .testimonials-name {
-    width: 34%;
   }
   .description-wrapper {
     width: 80%;
@@ -491,10 +492,195 @@ body {
   .footer-product-info {
     width: 35%;
   }
-  .footer-product-name {
-    width: 20%;
-  }
   #form {
     width: 55%;
+  }
+}
+@media(max-width: 668px){
+  .product-ingredients-item {
+    height: 135px;
+  }
+  .order-btn {
+    margin-top: 20px;
+  }
+  .product-composition-wrapper  {
+    margin-top: 85px;
+  }
+  .description-order-btn {
+    margin-top: 40px;
+  }
+}@media(max-width: 569px){
+  .product-name {
+    margin-bottom: 10px;
+  }
+  .promo {
+    width: 86%;
+  }
+  .product-img {
+    width: 30%;
+  }
+  .order-btn {
+    margin-top: 36px;
+  }
+  .product-composition-wrapper {
+    margin-top: 40px;
+    width: 95%;
+  }
+  .ingredient-img {
+    width: 57%;
+  }
+  .testimonial-image {
+    height: 250px;
+  }
+  .testimonials {
+    height: 100%;
+  }
+  .description-block {
+    flex-wrap: wrap;
+  }
+  .description-image {
+    width: 95%;
+  }
+  .description-text {
+    text-align: justify;
+    padding: 0;
+  }
+  .characteristics {
+    padding: 0;
+    line-height: 50px;
+  }
+  .fa-chevron-circle-left {
+    margin-top: 55%;
+  }
+  .fa-chevron-circle-right {
+    margin-top: 55%;
+  }
+}
+@media(max-width: 426px){
+  .product-img {
+    width: 37%;
+    margin: 0 auto 15px;
+  }
+  .background-video {
+    top: -3px;
+  }
+  .product-info{
+    flex-wrap: wrap;
+  }
+  .product-name {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .product-description {
+    padding: 0;
+    text-align: justify;
+  }
+  .product-composition-wrapper {
+    margin-top: 50px;
+  }
+  .product-ingredients-item {
+    height: 160px;
+    margin: 0 auto 15px;
+  }
+  .product-ingredients {
+    flex-direction: column;
+  }
+  .product-composition-img {
+    width: 40%;
+    margin-bottom: 15px;
+  }
+  .testimonial-author {
+    font-size: 20px;
+  }
+  .testimonial-text {
+    font-size: 15px;
+  }
+  .description-block {
+    flex-wrap: wrap;
+  }
+  .characteristics {
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 40px;
+  }
+  .form-wrapper {
+    margin-top: 37px;
+  }
+  .footer-product-name {
+    margin-bottom: 20px;
+  }
+  .name-wrapper {
+    margin-bottom: 40px;
+  }
+  .form-block {
+    flex-direction: column;
+  }
+  #form {
+    width: 95%;
+    padding-bottom: 65px;
+    padding-top: 87px;
+    margin: 0 auto;
+  }
+  .tel-wrapper {
+    margin-bottom: 40px;
+  }
+  .footer-product-info {
+    width: 60%;
+    margin: 0 auto 40px;
+  }
+}
+@media(max-width: 376px){
+  .product-info {
+    padding: 0;
+  }
+  .background-video {
+    display: none;
+  }
+  .product-description {
+    font-size: 14px;
+  }
+  .product-name {
+    font-size: 30px;
+  }
+  .product-img {
+    width: 50%;
+  }
+  .fa-chevron-circle-right {
+    margin-right: -30px;
+  }
+  .fa-chevron-circle-left {
+    margin-left: -30px;
+  }
+  .testimonial-image {
+    height: 150px;
+  }
+  .characteristics {
+    line-height: 35px;
+  }
+}
+@media(max-width: 321px){
+  .product-img {
+    width: 60%;
+  }
+  .fa-chevron-circle-right {
+    margin-right: -25px;
+  }
+  .fa-chevron-circle-left {
+    margin-left: -25px;
+  }
+  .fas:hover {
+    transform: scale(1.1);
+  }
+  .description-wrapper {
+    width: 83%;
+  }
+  .characteristics {
+    font-size: 12px;
+  }
+  .footer-product-info {
+    width: 65%;
+  }
+  .hint {
+    right: 15%;
   }
 }
